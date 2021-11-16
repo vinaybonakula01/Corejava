@@ -1,5 +1,9 @@
 package com.primitivedatatypes;
-
+/**
+ * this is primitivedatatypes
+ * @author Pooja
+ *
+ */
 public class Binumber {
 	private int a;
 	private int b;
