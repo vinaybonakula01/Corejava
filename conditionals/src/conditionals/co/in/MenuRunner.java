@@ -6,7 +6,7 @@ public class MenuRunner {
 
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
-		System.out.println("1.please enter number1");
+		System.out.println("1.please enter a number1");
 		int number1 = scanner.nextInt();
 		System.out.println("The First number u have enterd is --"+number1);
 		
@@ -22,23 +22,25 @@ public class MenuRunner {
 		
 		System.out.println("select your operation");
 		int operation = scanner.nextInt();
-		System.out.println("u have selected operation no :1"+operation);
+		System.out.println("The selected operation no:- "+operation);
 		 
 		if(operation==1) {
-			System.out.println(number1+number2);
+			System.out.println("Result:-  "+(number1+number2));
 		}
 		
-		if(operation==2) {
-			System.out.println(number1-number2);
+		else if(operation==2) {
+			System.out.println("Result:-  "+(number1-number2));
 		}
-		if(operation==3) {
-			System.out.println(number1*number2);
+		else if(operation==3) {
+			System.out.println("Result:-  "+(number1*number2));
 			
 		}
-		if(operation==4) {
-			System.out.println(number1%number2);
+		else if(operation==4) {
+			System.out.println("Result:-  "+(number1%number2));
 		}
-		
+		else {
+			System.out.println("invalid operation");
+		}
 	
 		}
 
