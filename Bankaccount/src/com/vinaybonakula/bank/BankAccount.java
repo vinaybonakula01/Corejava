@@ -5,7 +5,7 @@ public class BankAccount {
 
 	public BankAccount(int bankbalance) {
 		super();
-		this.bankbalance = bankbalance;
+		this.bankbalance = bankbalance%2;
 	}
 
 	public int deposit(int i) {
@@ -13,14 +13,15 @@ public class BankAccount {
 	}
 
 	public int withDraw(int i) {
-		
-		return bankbalance=bankbalance-i;
+	return bankbalance=bankbalance-i;
 	}
 
-	public int withdraw(int i) {
-		// TODO Auto-generated method stub
-		return 0;
+	@Override
+	public String toString() {
+		return "BankAccount [bankbalance=" + bankbalance + "]";
 	}
+
+	
 	
 
 }
