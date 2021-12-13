@@ -7,4 +7,9 @@ public class CurrentAccount extends BankAccount {
 		
 	}
 
+	public CurrentAccount(String name, int balance) {
+	this.name=name;
+	this.bankbalance = balance;
+	}
+
 }

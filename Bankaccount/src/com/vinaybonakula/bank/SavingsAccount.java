@@ -6,8 +6,13 @@ public class SavingsAccount extends BankAccount {
 		super(bankbalance);
 		// TODO Auto-generated constructor stub
 	}
+public SavingsAccount(String name , int balance) {
+		this.name = name;
+		this.bankbalance = balance;
+		
+	}
 @Override
-public int withdraw(int i) {
+public int withDraw(int i) {
 	return bankbalance=bankbalance-i-1000;
 	
 }
